@@ -1,6 +1,6 @@
 [project]
 name = "songlink"
-version = "v1-alpha.1"
+version = "v1-alpha.1-rev-1"
 description = "An unofficial lightweight, type hinted library that helps query the songlink api: https://odesli.co/"
 authors = [
     {name = "Flinty", email = "blobjo7@gmail.com"}
