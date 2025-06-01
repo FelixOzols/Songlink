@@ -2,7 +2,7 @@ from typing import Literal, Final #, Any, TypedDict, Self
 from dataclasses import dataclass, asdict
 import json
 import requests
-from functools import lru_cache
+# from functools import lru_cache
 
 ENDPOINT: Final = 'https://api.song.link/v1-alpha.1/links'
 
@@ -171,7 +171,7 @@ class Client(requests.sessions.Session):
 
         self.default_params = default_params.as_dict() if default_params else {}
     
-    @lru_cache(maxsize=256)
+    # @lru_cache(maxsize=256) ruining method signature
     def search(self, query: QueryParameters) -> APIResponse:
         params = self.default_params | query.as_dict()
 
